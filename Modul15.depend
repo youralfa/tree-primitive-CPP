@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1672588930 source:/Users/achmadfahriza/@@@@@_C++/codeblocks/Modul15/main.cpp
+	"head15.h"
+
+1672588633 source:/Users/achmadfahriza/@@@@@_C++/codeblocks/Modul15/program.cpp
+	"head15.h"
+
+1672587202 /Users/achmadfahriza/@@@@@_C++/codeblocks/Modul15/head15.h
+	<iostream>
+
