@@ -26,5 +26,8 @@ void printDescendant(adrNode root, infotype x);
 int sumNode(adrNode root);
 int countLeaves(adrNode root);
 int heightTree(adrNode root);
+int InternalNode (adrNode root);
+void printInOrder(adrNode root);
+void printPostOrder(adrNode root);
 
 #endif // HEAD15_H_INCLUDED

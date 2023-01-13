@@ -19,6 +19,10 @@ int main()
     /* 2. Tampilkan node dari BST secara Pre-Order */
     cout <<"Pre Order\t\t: ";
     printPreOrder(root);
+    cout <<"\nPre Order\t\t: ";
+    printInOrder(root);
+    cout <<"\nPre Order\t\t: ";
+    printPostOrder(root);
     cout << endl;
     /* 3. Tampilkan keturunan dari node 9*/
     printf("Descendent of Node 9\t: ");
@@ -33,5 +37,8 @@ int main()
     /* 4. Tampilkan Tinggi dari Tree*/
     cout <<"Height of Tree\t\t: ";
     cout << heightTree(root) << endl;
+
+    cout <<"InternalNode\t\t: ";
+    cout << InternalNode(root) << endl;
     return 0;
 }

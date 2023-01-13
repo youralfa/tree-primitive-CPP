@@ -13,9 +13,9 @@ adrNode findNode(adrNode root, infotype x){
         return root;
     }else{
         if (info(root) > x){
-            findNode(left(root), x);
+            return findNode(left(root), x);
         }else if(info(root) < x){
-            findNode(right(root), x);
+            return findNode(right(root), x);
         }
     }
 }
@@ -37,6 +37,21 @@ void printPreOrder(adrNode root){
         cout << info(root) <<" ";
         printPreOrder(left(root));
         printPreOrder(right(root));
+    }
+}
+
+void printInOrder(adrNode root){
+    if(root != NIL){
+        printPreOrder(left(root));
+        cout << info(root) <<" ";
+        printPreOrder(right(root));
+    }
+}
+void printPostOrder(adrNode root){
+    if(root != NIL){
+        printPreOrder(left(root));
+        printPreOrder(right(root));
+        cout << info(root) <<" ";
     }
 }
 void printDescendant(adrNode root, infotype x){
@@ -74,3 +89,15 @@ int heightTree(adrNode root){
     }
     return sumHeight;
 }
+
+int InternalNode (adrNode root){
+    if (root == NIL){
+        return 0;
+    }
+    if (left(root) != NIL || right(root) != NIL){
+        return info(root);
+    }
+    InternalNode(left(root));
+    InternalNode(right(root));
+}
+
